@@ -21,8 +21,6 @@ var cli struct {
 func main() {
 	ctx := kong.Parse(&cli)
 
-	fmt.Printf("%v\n", ctx)
-
 	err := ctx.Run()
 	if err != nil {
 		fmt.Println(err)
